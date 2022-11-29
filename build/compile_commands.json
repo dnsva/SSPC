@@ -1,0 +1,77 @@
+[
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2012/CMakeFiles/A12.dir/A.cpp.o -c /Users/anna/Desktop/SSPC/2012/A.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2012/A.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2012/CMakeFiles/B12.dir/B.cpp.o -c /Users/anna/Desktop/SSPC/2012/B.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2012/B.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2012/CMakeFiles/C12.dir/C.cpp.o -c /Users/anna/Desktop/SSPC/2012/C.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2012/C.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2012/CMakeFiles/D12.dir/D.cpp.o -c /Users/anna/Desktop/SSPC/2012/D.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2012/D.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2012/CMakeFiles/E12.dir/E.cpp.o -c /Users/anna/Desktop/SSPC/2012/E.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2012/E.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2013/CMakeFiles/A13.dir/A.cpp.o -c /Users/anna/Desktop/SSPC/2013/A.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2013/A.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2013/CMakeFiles/B13.dir/B.cpp.o -c /Users/anna/Desktop/SSPC/2013/B.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2013/B.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2013/CMakeFiles/C13.dir/C.cpp.o -c /Users/anna/Desktop/SSPC/2013/C.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2013/C.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2013/CMakeFiles/D13.dir/D.cpp.o -c /Users/anna/Desktop/SSPC/2013/D.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2013/D.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2013/CMakeFiles/E13.dir/E.cpp.o -c /Users/anna/Desktop/SSPC/2013/E.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2013/E.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2016/CMakeFiles/A16.dir/A.cpp.o -c /Users/anna/Desktop/SSPC/2016/A.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2016/A.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2016/CMakeFiles/B16.dir/B.cpp.o -c /Users/anna/Desktop/SSPC/2016/B.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2016/B.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2016/CMakeFiles/C16.dir/C.cpp.o -c /Users/anna/Desktop/SSPC/2016/C.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2016/C.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2016/CMakeFiles/D16.dir/D.cpp.o -c /Users/anna/Desktop/SSPC/2016/D.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2016/D.cpp"
+},
+{
+  "directory": "/Users/anna/Desktop/SSPC/build",
+  "command": "/usr/bin/clang++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20 -o 2016/CMakeFiles/E16.dir/E.cpp.o -c /Users/anna/Desktop/SSPC/2016/E.cpp",
+  "file": "/Users/anna/Desktop/SSPC/2016/E.cpp"
+}
+]

@@ -1,0 +1,234 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "2012",
+					"jsonFile" : "directory-2012-Debug-81fe89e0a1d33ec71e62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "2012",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						6,
+						9,
+						12
+					]
+				},
+				{
+					"build" : "2013",
+					"jsonFile" : "directory-2013-Debug-bd4fdc143b0037d8de31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "2013",
+					"targetIndexes" : 
+					[
+						1,
+						4,
+						7,
+						10,
+						13
+					]
+				},
+				{
+					"build" : "2016",
+					"jsonFile" : "directory-2016-Debug-1c8b6ea875445809f6f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "2016",
+					"targetIndexes" : 
+					[
+						2,
+						5,
+						8,
+						11,
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "SSPC Solutions",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "A12::@626e5c579d8f85159595",
+					"jsonFile" : "target-A12-Debug-2cfa5314343ea5e786ae.json",
+					"name" : "A12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "A13::@27f4f3dbc763eb2f8e64",
+					"jsonFile" : "target-A13-Debug-0090609bd6c0575f2f96.json",
+					"name" : "A13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "A16::@a2b25cbfcedd39914799",
+					"jsonFile" : "target-A16-Debug-2f627420fa9261be52d2.json",
+					"name" : "A16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "B12::@626e5c579d8f85159595",
+					"jsonFile" : "target-B12-Debug-ebd5a5a76090b0dd3bee.json",
+					"name" : "B12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "B13::@27f4f3dbc763eb2f8e64",
+					"jsonFile" : "target-B13-Debug-2dfdf28bb2e24410c43f.json",
+					"name" : "B13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "B16::@a2b25cbfcedd39914799",
+					"jsonFile" : "target-B16-Debug-55bb487865412131dc8f.json",
+					"name" : "B16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "C12::@626e5c579d8f85159595",
+					"jsonFile" : "target-C12-Debug-967b770905d2cb2f0fb4.json",
+					"name" : "C12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "C13::@27f4f3dbc763eb2f8e64",
+					"jsonFile" : "target-C13-Debug-1e4da93780f62a4b7bed.json",
+					"name" : "C13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "C16::@a2b25cbfcedd39914799",
+					"jsonFile" : "target-C16-Debug-f30fcdeed95cadea2f46.json",
+					"name" : "C16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "D12::@626e5c579d8f85159595",
+					"jsonFile" : "target-D12-Debug-2afa350cbafca26bfe97.json",
+					"name" : "D12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "D13::@27f4f3dbc763eb2f8e64",
+					"jsonFile" : "target-D13-Debug-86e2c82759ef486d726f.json",
+					"name" : "D13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "D16::@a2b25cbfcedd39914799",
+					"jsonFile" : "target-D16-Debug-42878b48e5d7b57d06a0.json",
+					"name" : "D16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "E12::@626e5c579d8f85159595",
+					"jsonFile" : "target-E12-Debug-7d6cecc4bda2b6dc43b8.json",
+					"name" : "E12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "E13::@27f4f3dbc763eb2f8e64",
+					"jsonFile" : "target-E13-Debug-f500b7a0657f1db1a024.json",
+					"name" : "E13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "E16::@a2b25cbfcedd39914799",
+					"jsonFile" : "target-E16-Debug-a29bb140524f9c2019b6.json",
+					"name" : "E16",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/anna/Desktop/SSPC/build",
+		"source" : "/Users/anna/Desktop/SSPC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

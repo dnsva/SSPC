@@ -1,0 +1,5 @@
+add_executable(A12 A.cpp)
+add_executable(B12 B.cpp)
+add_executable(C12 C.cpp)
+add_executable(D12 D.cpp)
+add_executable(E12 E.cpp)

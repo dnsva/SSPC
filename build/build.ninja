@@ -1,0 +1,712 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: SSPC Solutions
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/anna/Desktop/SSPC/build/
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build && /usr/local/Cellar/cmake/3.24.2/bin/ccmake -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake --regenerate-during-build -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/anna/Desktop/SSPC/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A12
+
+
+#############################################
+# Order-only phony target for A12
+
+build cmake_object_order_depends_target_A12: phony || 2012/CMakeFiles/A12.dir
+
+build 2012/CMakeFiles/A12.dir/A.cpp.o: CXX_COMPILER__A12_Debug /Users/anna/Desktop/SSPC/2012/A.cpp || cmake_object_order_depends_target_A12
+  DEP_FILE = 2012/CMakeFiles/A12.dir/A.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2012/CMakeFiles/A12.dir
+  OBJECT_FILE_DIR = 2012/CMakeFiles/A12.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A12
+
+
+#############################################
+# Link the executable 2012/A12
+
+build 2012/A12: CXX_EXECUTABLE_LINKER__A12_Debug 2012/CMakeFiles/A12.dir/A.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2012/CMakeFiles/A12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2012/A12
+  TARGET_PDB = A12.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B12
+
+
+#############################################
+# Order-only phony target for B12
+
+build cmake_object_order_depends_target_B12: phony || 2012/CMakeFiles/B12.dir
+
+build 2012/CMakeFiles/B12.dir/B.cpp.o: CXX_COMPILER__B12_Debug /Users/anna/Desktop/SSPC/2012/B.cpp || cmake_object_order_depends_target_B12
+  DEP_FILE = 2012/CMakeFiles/B12.dir/B.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2012/CMakeFiles/B12.dir
+  OBJECT_FILE_DIR = 2012/CMakeFiles/B12.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B12
+
+
+#############################################
+# Link the executable 2012/B12
+
+build 2012/B12: CXX_EXECUTABLE_LINKER__B12_Debug 2012/CMakeFiles/B12.dir/B.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2012/CMakeFiles/B12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2012/B12
+  TARGET_PDB = B12.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C12
+
+
+#############################################
+# Order-only phony target for C12
+
+build cmake_object_order_depends_target_C12: phony || 2012/CMakeFiles/C12.dir
+
+build 2012/CMakeFiles/C12.dir/C.cpp.o: CXX_COMPILER__C12_Debug /Users/anna/Desktop/SSPC/2012/C.cpp || cmake_object_order_depends_target_C12
+  DEP_FILE = 2012/CMakeFiles/C12.dir/C.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2012/CMakeFiles/C12.dir
+  OBJECT_FILE_DIR = 2012/CMakeFiles/C12.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C12
+
+
+#############################################
+# Link the executable 2012/C12
+
+build 2012/C12: CXX_EXECUTABLE_LINKER__C12_Debug 2012/CMakeFiles/C12.dir/C.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2012/CMakeFiles/C12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2012/C12
+  TARGET_PDB = C12.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target D12
+
+
+#############################################
+# Order-only phony target for D12
+
+build cmake_object_order_depends_target_D12: phony || 2012/CMakeFiles/D12.dir
+
+build 2012/CMakeFiles/D12.dir/D.cpp.o: CXX_COMPILER__D12_Debug /Users/anna/Desktop/SSPC/2012/D.cpp || cmake_object_order_depends_target_D12
+  DEP_FILE = 2012/CMakeFiles/D12.dir/D.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2012/CMakeFiles/D12.dir
+  OBJECT_FILE_DIR = 2012/CMakeFiles/D12.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target D12
+
+
+#############################################
+# Link the executable 2012/D12
+
+build 2012/D12: CXX_EXECUTABLE_LINKER__D12_Debug 2012/CMakeFiles/D12.dir/D.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2012/CMakeFiles/D12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2012/D12
+  TARGET_PDB = D12.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target E12
+
+
+#############################################
+# Order-only phony target for E12
+
+build cmake_object_order_depends_target_E12: phony || 2012/CMakeFiles/E12.dir
+
+build 2012/CMakeFiles/E12.dir/E.cpp.o: CXX_COMPILER__E12_Debug /Users/anna/Desktop/SSPC/2012/E.cpp || cmake_object_order_depends_target_E12
+  DEP_FILE = 2012/CMakeFiles/E12.dir/E.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2012/CMakeFiles/E12.dir
+  OBJECT_FILE_DIR = 2012/CMakeFiles/E12.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target E12
+
+
+#############################################
+# Link the executable 2012/E12
+
+build 2012/E12: CXX_EXECUTABLE_LINKER__E12_Debug 2012/CMakeFiles/E12.dir/E.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2012/CMakeFiles/E12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2012/E12
+  TARGET_PDB = E12.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2012/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build/2012 && /usr/local/Cellar/cmake/3.24.2/bin/ccmake -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build 2012/edit_cache: phony 2012/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2012/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build/2012 && /usr/local/Cellar/cmake/3.24.2/bin/cmake --regenerate-during-build -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2012/rebuild_cache: phony 2012/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/anna/Desktop/SSPC/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A13
+
+
+#############################################
+# Order-only phony target for A13
+
+build cmake_object_order_depends_target_A13: phony || 2013/CMakeFiles/A13.dir
+
+build 2013/CMakeFiles/A13.dir/A.cpp.o: CXX_COMPILER__A13_Debug /Users/anna/Desktop/SSPC/2013/A.cpp || cmake_object_order_depends_target_A13
+  DEP_FILE = 2013/CMakeFiles/A13.dir/A.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2013/CMakeFiles/A13.dir
+  OBJECT_FILE_DIR = 2013/CMakeFiles/A13.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A13
+
+
+#############################################
+# Link the executable 2013/A13
+
+build 2013/A13: CXX_EXECUTABLE_LINKER__A13_Debug 2013/CMakeFiles/A13.dir/A.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2013/CMakeFiles/A13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2013/A13
+  TARGET_PDB = A13.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B13
+
+
+#############################################
+# Order-only phony target for B13
+
+build cmake_object_order_depends_target_B13: phony || 2013/CMakeFiles/B13.dir
+
+build 2013/CMakeFiles/B13.dir/B.cpp.o: CXX_COMPILER__B13_Debug /Users/anna/Desktop/SSPC/2013/B.cpp || cmake_object_order_depends_target_B13
+  DEP_FILE = 2013/CMakeFiles/B13.dir/B.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2013/CMakeFiles/B13.dir
+  OBJECT_FILE_DIR = 2013/CMakeFiles/B13.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B13
+
+
+#############################################
+# Link the executable 2013/B13
+
+build 2013/B13: CXX_EXECUTABLE_LINKER__B13_Debug 2013/CMakeFiles/B13.dir/B.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2013/CMakeFiles/B13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2013/B13
+  TARGET_PDB = B13.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C13
+
+
+#############################################
+# Order-only phony target for C13
+
+build cmake_object_order_depends_target_C13: phony || 2013/CMakeFiles/C13.dir
+
+build 2013/CMakeFiles/C13.dir/C.cpp.o: CXX_COMPILER__C13_Debug /Users/anna/Desktop/SSPC/2013/C.cpp || cmake_object_order_depends_target_C13
+  DEP_FILE = 2013/CMakeFiles/C13.dir/C.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2013/CMakeFiles/C13.dir
+  OBJECT_FILE_DIR = 2013/CMakeFiles/C13.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C13
+
+
+#############################################
+# Link the executable 2013/C13
+
+build 2013/C13: CXX_EXECUTABLE_LINKER__C13_Debug 2013/CMakeFiles/C13.dir/C.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2013/CMakeFiles/C13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2013/C13
+  TARGET_PDB = C13.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target D13
+
+
+#############################################
+# Order-only phony target for D13
+
+build cmake_object_order_depends_target_D13: phony || 2013/CMakeFiles/D13.dir
+
+build 2013/CMakeFiles/D13.dir/D.cpp.o: CXX_COMPILER__D13_Debug /Users/anna/Desktop/SSPC/2013/D.cpp || cmake_object_order_depends_target_D13
+  DEP_FILE = 2013/CMakeFiles/D13.dir/D.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2013/CMakeFiles/D13.dir
+  OBJECT_FILE_DIR = 2013/CMakeFiles/D13.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target D13
+
+
+#############################################
+# Link the executable 2013/D13
+
+build 2013/D13: CXX_EXECUTABLE_LINKER__D13_Debug 2013/CMakeFiles/D13.dir/D.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2013/CMakeFiles/D13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2013/D13
+  TARGET_PDB = D13.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target E13
+
+
+#############################################
+# Order-only phony target for E13
+
+build cmake_object_order_depends_target_E13: phony || 2013/CMakeFiles/E13.dir
+
+build 2013/CMakeFiles/E13.dir/E.cpp.o: CXX_COMPILER__E13_Debug /Users/anna/Desktop/SSPC/2013/E.cpp || cmake_object_order_depends_target_E13
+  DEP_FILE = 2013/CMakeFiles/E13.dir/E.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2013/CMakeFiles/E13.dir
+  OBJECT_FILE_DIR = 2013/CMakeFiles/E13.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target E13
+
+
+#############################################
+# Link the executable 2013/E13
+
+build 2013/E13: CXX_EXECUTABLE_LINKER__E13_Debug 2013/CMakeFiles/E13.dir/E.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2013/CMakeFiles/E13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2013/E13
+  TARGET_PDB = E13.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2013/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build/2013 && /usr/local/Cellar/cmake/3.24.2/bin/ccmake -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build 2013/edit_cache: phony 2013/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2013/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build/2013 && /usr/local/Cellar/cmake/3.24.2/bin/cmake --regenerate-during-build -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2013/rebuild_cache: phony 2013/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/anna/Desktop/SSPC/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A16
+
+
+#############################################
+# Order-only phony target for A16
+
+build cmake_object_order_depends_target_A16: phony || 2016/CMakeFiles/A16.dir
+
+build 2016/CMakeFiles/A16.dir/A.cpp.o: CXX_COMPILER__A16_Debug /Users/anna/Desktop/SSPC/2016/A.cpp || cmake_object_order_depends_target_A16
+  DEP_FILE = 2016/CMakeFiles/A16.dir/A.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2016/CMakeFiles/A16.dir
+  OBJECT_FILE_DIR = 2016/CMakeFiles/A16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A16
+
+
+#############################################
+# Link the executable 2016/A16
+
+build 2016/A16: CXX_EXECUTABLE_LINKER__A16_Debug 2016/CMakeFiles/A16.dir/A.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2016/CMakeFiles/A16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2016/A16
+  TARGET_PDB = A16.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B16
+
+
+#############################################
+# Order-only phony target for B16
+
+build cmake_object_order_depends_target_B16: phony || 2016/CMakeFiles/B16.dir
+
+build 2016/CMakeFiles/B16.dir/B.cpp.o: CXX_COMPILER__B16_Debug /Users/anna/Desktop/SSPC/2016/B.cpp || cmake_object_order_depends_target_B16
+  DEP_FILE = 2016/CMakeFiles/B16.dir/B.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2016/CMakeFiles/B16.dir
+  OBJECT_FILE_DIR = 2016/CMakeFiles/B16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B16
+
+
+#############################################
+# Link the executable 2016/B16
+
+build 2016/B16: CXX_EXECUTABLE_LINKER__B16_Debug 2016/CMakeFiles/B16.dir/B.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2016/CMakeFiles/B16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2016/B16
+  TARGET_PDB = B16.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C16
+
+
+#############################################
+# Order-only phony target for C16
+
+build cmake_object_order_depends_target_C16: phony || 2016/CMakeFiles/C16.dir
+
+build 2016/CMakeFiles/C16.dir/C.cpp.o: CXX_COMPILER__C16_Debug /Users/anna/Desktop/SSPC/2016/C.cpp || cmake_object_order_depends_target_C16
+  DEP_FILE = 2016/CMakeFiles/C16.dir/C.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2016/CMakeFiles/C16.dir
+  OBJECT_FILE_DIR = 2016/CMakeFiles/C16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C16
+
+
+#############################################
+# Link the executable 2016/C16
+
+build 2016/C16: CXX_EXECUTABLE_LINKER__C16_Debug 2016/CMakeFiles/C16.dir/C.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2016/CMakeFiles/C16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2016/C16
+  TARGET_PDB = C16.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target D16
+
+
+#############################################
+# Order-only phony target for D16
+
+build cmake_object_order_depends_target_D16: phony || 2016/CMakeFiles/D16.dir
+
+build 2016/CMakeFiles/D16.dir/D.cpp.o: CXX_COMPILER__D16_Debug /Users/anna/Desktop/SSPC/2016/D.cpp || cmake_object_order_depends_target_D16
+  DEP_FILE = 2016/CMakeFiles/D16.dir/D.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2016/CMakeFiles/D16.dir
+  OBJECT_FILE_DIR = 2016/CMakeFiles/D16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target D16
+
+
+#############################################
+# Link the executable 2016/D16
+
+build 2016/D16: CXX_EXECUTABLE_LINKER__D16_Debug 2016/CMakeFiles/D16.dir/D.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2016/CMakeFiles/D16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2016/D16
+  TARGET_PDB = D16.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target E16
+
+
+#############################################
+# Order-only phony target for E16
+
+build cmake_object_order_depends_target_E16: phony || 2016/CMakeFiles/E16.dir
+
+build 2016/CMakeFiles/E16.dir/E.cpp.o: CXX_COMPILER__E16_Debug /Users/anna/Desktop/SSPC/2016/E.cpp || cmake_object_order_depends_target_E16
+  DEP_FILE = 2016/CMakeFiles/E16.dir/E.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu++20
+  OBJECT_DIR = 2016/CMakeFiles/E16.dir
+  OBJECT_FILE_DIR = 2016/CMakeFiles/E16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target E16
+
+
+#############################################
+# Link the executable 2016/E16
+
+build 2016/E16: CXX_EXECUTABLE_LINKER__E16_Debug 2016/CMakeFiles/E16.dir/E.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = 2016/CMakeFiles/E16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 2016/E16
+  TARGET_PDB = E16.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2016/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build/2016 && /usr/local/Cellar/cmake/3.24.2/bin/ccmake -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build 2016/edit_cache: phony 2016/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2016/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anna/Desktop/SSPC/build/2016 && /usr/local/Cellar/cmake/3.24.2/bin/cmake --regenerate-during-build -S/Users/anna/Desktop/SSPC -B/Users/anna/Desktop/SSPC/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2016/rebuild_cache: phony 2016/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build A12: phony 2012/A12
+
+build A13: phony 2013/A13
+
+build A16: phony 2016/A16
+
+build B12: phony 2012/B12
+
+build B13: phony 2013/B13
+
+build B16: phony 2016/B16
+
+build C12: phony 2012/C12
+
+build C13: phony 2013/C13
+
+build C16: phony 2016/C16
+
+build D12: phony 2012/D12
+
+build D13: phony 2013/D13
+
+build D16: phony 2016/D16
+
+build E12: phony 2012/E12
+
+build E13: phony 2013/E13
+
+build E16: phony 2016/E16
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anna/Desktop/SSPC/build
+
+build all: phony 2012/all 2013/all 2016/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anna/Desktop/SSPC/build/2012
+
+build 2012/all: phony 2012/A12 2012/B12 2012/C12 2012/D12 2012/E12
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anna/Desktop/SSPC/build/2013
+
+build 2013/all: phony 2013/A13 2013/B13 2013/C13 2013/D13 2013/E13
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anna/Desktop/SSPC/build/2016
+
+build 2016/all: phony 2016/A16 2016/B16 2016/C16 2016/D16 2016/E16
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/anna/Desktop/SSPC/2012/CMakeLists.txt /Users/anna/Desktop/SSPC/2013/CMakeLists.txt /Users/anna/Desktop/SSPC/2016/CMakeLists.txt /Users/anna/Desktop/SSPC/CMakeLists.txt /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/anna/Desktop/SSPC/2012/CMakeLists.txt /Users/anna/Desktop/SSPC/2013/CMakeLists.txt /Users/anna/Desktop/SSPC/2016/CMakeLists.txt /Users/anna/Desktop/SSPC/CMakeLists.txt /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
