@@ -1,4 +1,6 @@
 
+//A: Financial Management
+
 #include <iostream>
 #include <vector> 
 
@@ -6,7 +8,7 @@ using namespace std;
 
 void print_commas(double avg){
 
-    //First slit int up into digits then loop
+    //First slit int up into digits
     vector<int>digits;
     int avg_int = avg; //cast to int 
     while(avg_int > 0){
@@ -16,13 +18,14 @@ void print_commas(double avg){
     }
     reverse(digits.begin(), digits.end());
 
-    //Cout
+    //Cout commas
     for(int i = 0; i<digits.size(); ++i){
         cout<<digits[i];
         if(i%3 == 0 && i != digits.size()-1 && !((i == 0) && digits.size() <= 3)){
             cout<<",";
         }
     }
+    //Cout decimal 
     cout<<"."<<int((avg - int(avg))*100.0);
 }
 
@@ -34,6 +37,7 @@ void solve(){
         total += month_val;
     }
     double avg = total / 12;
+    //Output answer
     cout<<"$";
     print_commas(avg);
     cout<<" $";
