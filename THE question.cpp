@@ -1,5 +1,19 @@
 
-// Anna Denisova
+// Anna Denisova, 2022-23
+
+/*
+There is a 1000x1000 square cake. We use a knife to cut the cake. The problem is after a series of cutting, how many partitions the cake will have.
+Assumption: 
+	1. The number of cutting will be no more than 8.
+	2. After cutting, the length of any edge of the partition will be no less than 1.
+	3. The vertex coordinates of the cake are (0,0)(0,1000)(1000,1000)(1000,0).
+	4. The intersections of the cut line and the cake edge are two.
+Input:
+	The first line of input is an integer M, then a blank line followed by M datasets. There is a blank line between datasets. 
+	The first line of each dataset is the number of the cutting. The following lines contain the information of the cut lines. Each line has 4 integer numbers, which represent the coordinate of the intersection of the cut line and cake edge.
+Output:
+	The output for each dataset is the number of partitions of the cake.
+*/
 
 #include <iostream>
 #include <set>
@@ -7,7 +21,7 @@
 
 using namespace std;
 
-struct line {
+struct line { //stores endpoints of line 
   double x1;
   double y1;
   double x2;
@@ -22,23 +36,23 @@ struct line {
 
 };
 
-void solve() { //main function
+void solve() { //treats each dataset
 
   int n; //number of lines in total
-  cin >> n;
+  cin>>n;
 
-  //counter stores num of sections (the answer)
+  //counter stores num of partitions (the answer)
   int counter = n + 1; //we start at n+1 and then add on POIs as we get lines
 
   vector<line> lines; //stores all lines ever given
 
-  int x1, y1, x2, y2; //temp points for each line (used for input) 
+  int x1, y1, x2, y2; //temp points for each line (used for getting input) 
 
   for (int i = 0; i < n; ++i) { //for each line
     cin >> x1 >> y1 >> x2 >> y2; //get its points
 
     line l1 = line(x1, y1, x2, y2); //construct the line 
-    //cout << "CURRENT LINE # " << i + 1 << "\n";
+    
 
     set<pair<double, double> > POIS; //make a set (no dups) of POIS of l1 and all prev lines
 
@@ -77,6 +91,11 @@ void solve() { //main function
 }
 
 int main() {
-  solve();
-  return 0;
+	
+	int M; //the num of datasets
+	cin>>M;
+	for(int i = 0; i<M; ++i){
+		solve(); //call function to deal with each testcase 
+	}
+	return 0;
 }
